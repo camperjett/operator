@@ -83,6 +83,7 @@ type Trigger struct {
 // defined for triggers only if user pass them
 type TriggersProperties struct {
 	EnableApiFields string `json:"enable-api-fields,omitempty"`
+	LabelsExclusionPattern string `json:"labels-exclusion-pattern,omitempty"`
 	// +optional
 	OptionalTriggersProperties `json:",inline"`
 }
